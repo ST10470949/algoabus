@@ -10,33 +10,258 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AdminRouteImport } from './routes/admin'
+import { Route as AdvertiseRouteImport } from './routes/advertise'
+import { Route as CareersRouteImport } from './routes/careers'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DepotsRouteImport } from './routes/depots'
+import { Route as DriverRouteImport } from './routes/driver'
+import { Route as HireRouteImport } from './routes/hire'
+import { Route as JourneyPlannerRouteImport } from './routes/journey-planner'
+import { Route as OffersRouteImport } from './routes/offers'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as RoutesRouteImport } from './routes/routes'
+import { Route as SmartCardRouteImport } from './routes/smart-card'
+import { Route as SupportRouteImport } from './routes/support'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as TrackingRouteImport } from './routes/tracking'
+import { Route as UnitManagersRouteImport } from './routes/unit-managers'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdvertiseRoute = AdvertiseRouteImport.update({
+  id: '/advertise',
+  path: '/advertise',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CareersRoute = CareersRouteImport.update({
+  id: '/careers',
+  path: '/careers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DepotsRoute = DepotsRouteImport.update({
+  id: '/depots',
+  path: '/depots',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DriverRoute = DriverRouteImport.update({
+  id: '/driver',
+  path: '/driver',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HireRoute = HireRouteImport.update({
+  id: '/hire',
+  path: '/hire',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JourneyPlannerRoute = JourneyPlannerRouteImport.update({
+  id: '/journey-planner',
+  path: '/journey-planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OffersRoute = OffersRouteImport.update({
+  id: '/offers',
+  path: '/offers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoutesRoute = RoutesRouteImport.update({
+  id: '/routes',
+  path: '/routes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SmartCardRoute = SmartCardRouteImport.update({
+  id: '/smart-card',
+  path: '/smart-card',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SupportRoute = SupportRouteImport.update({
+  id: '/support',
+  path: '/support',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TrackingRoute = TrackingRouteImport.update({
+  id: '/tracking',
+  path: '/tracking',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UnitManagersRoute = UnitManagersRouteImport.update({
+  id: '/unit-managers',
+  path: '/unit-managers',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/admin': typeof AdminRoute
+  '/advertise': typeof AdvertiseRoute
+  '/careers': typeof CareersRoute
+  '/contact': typeof ContactRoute
+  '/depots': typeof DepotsRoute
+  '/driver': typeof DriverRoute
+  '/hire': typeof HireRoute
+  '/journey-planner': typeof JourneyPlannerRoute
+  '/offers': typeof OffersRoute
+  '/privacy': typeof PrivacyRoute
+  '/routes': typeof RoutesRoute
+  '/smart-card': typeof SmartCardRoute
+  '/support': typeof SupportRoute
+  '/terms': typeof TermsRoute
+  '/tracking': typeof TrackingRoute
+  '/unit-managers': typeof UnitManagersRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/admin': typeof AdminRoute
+  '/advertise': typeof AdvertiseRoute
+  '/careers': typeof CareersRoute
+  '/contact': typeof ContactRoute
+  '/depots': typeof DepotsRoute
+  '/driver': typeof DriverRoute
+  '/hire': typeof HireRoute
+  '/journey-planner': typeof JourneyPlannerRoute
+  '/offers': typeof OffersRoute
+  '/privacy': typeof PrivacyRoute
+  '/routes': typeof RoutesRoute
+  '/smart-card': typeof SmartCardRoute
+  '/support': typeof SupportRoute
+  '/terms': typeof TermsRoute
+  '/tracking': typeof TrackingRoute
+  '/unit-managers': typeof UnitManagersRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/admin': typeof AdminRoute
+  '/advertise': typeof AdvertiseRoute
+  '/careers': typeof CareersRoute
+  '/contact': typeof ContactRoute
+  '/depots': typeof DepotsRoute
+  '/driver': typeof DriverRoute
+  '/hire': typeof HireRoute
+  '/journey-planner': typeof JourneyPlannerRoute
+  '/offers': typeof OffersRoute
+  '/privacy': typeof PrivacyRoute
+  '/routes': typeof RoutesRoute
+  '/smart-card': typeof SmartCardRoute
+  '/support': typeof SupportRoute
+  '/terms': typeof TermsRoute
+  '/tracking': typeof TrackingRoute
+  '/unit-managers': typeof UnitManagersRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/admin'
+    | '/advertise'
+    | '/careers'
+    | '/contact'
+    | '/depots'
+    | '/driver'
+    | '/hire'
+    | '/journey-planner'
+    | '/offers'
+    | '/privacy'
+    | '/routes'
+    | '/smart-card'
+    | '/support'
+    | '/terms'
+    | '/tracking'
+    | '/unit-managers'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/admin'
+    | '/advertise'
+    | '/careers'
+    | '/contact'
+    | '/depots'
+    | '/driver'
+    | '/hire'
+    | '/journey-planner'
+    | '/offers'
+    | '/privacy'
+    | '/routes'
+    | '/smart-card'
+    | '/support'
+    | '/terms'
+    | '/tracking'
+    | '/unit-managers'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/admin'
+    | '/advertise'
+    | '/careers'
+    | '/contact'
+    | '/depots'
+    | '/driver'
+    | '/hire'
+    | '/journey-planner'
+    | '/offers'
+    | '/privacy'
+    | '/routes'
+    | '/smart-card'
+    | '/support'
+    | '/terms'
+    | '/tracking'
+    | '/unit-managers'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AdminRoute: typeof AdminRoute
+  AdvertiseRoute: typeof AdvertiseRoute
+  CareersRoute: typeof CareersRoute
+  ContactRoute: typeof ContactRoute
+  DepotsRoute: typeof DepotsRoute
+  DriverRoute: typeof DriverRoute
+  HireRoute: typeof HireRoute
+  JourneyPlannerRoute: typeof JourneyPlannerRoute
+  OffersRoute: typeof OffersRoute
+  PrivacyRoute: typeof PrivacyRoute
+  RoutesRoute: typeof RoutesRoute
+  SmartCardRoute: typeof SmartCardRoute
+  SupportRoute: typeof SupportRoute
+  TermsRoute: typeof TermsRoute
+  TrackingRoute: typeof TrackingRoute
+  UnitManagersRoute: typeof UnitManagersRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +273,147 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertise': {
+      id: '/advertise'
+      path: '/advertise'
+      fullPath: '/advertise'
+      preLoaderRoute: typeof AdvertiseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/careers': {
+      id: '/careers'
+      path: '/careers'
+      fullPath: '/careers'
+      preLoaderRoute: typeof CareersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/depots': {
+      id: '/depots'
+      path: '/depots'
+      fullPath: '/depots'
+      preLoaderRoute: typeof DepotsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/driver': {
+      id: '/driver'
+      path: '/driver'
+      fullPath: '/driver'
+      preLoaderRoute: typeof DriverRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/hire': {
+      id: '/hire'
+      path: '/hire'
+      fullPath: '/hire'
+      preLoaderRoute: typeof HireRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/journey-planner': {
+      id: '/journey-planner'
+      path: '/journey-planner'
+      fullPath: '/journey-planner'
+      preLoaderRoute: typeof JourneyPlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/offers': {
+      id: '/offers'
+      path: '/offers'
+      fullPath: '/offers'
+      preLoaderRoute: typeof OffersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/routes': {
+      id: '/routes'
+      path: '/routes'
+      fullPath: '/routes'
+      preLoaderRoute: typeof RoutesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/smart-card': {
+      id: '/smart-card'
+      path: '/smart-card'
+      fullPath: '/smart-card'
+      preLoaderRoute: typeof SmartCardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/support': {
+      id: '/support'
+      path: '/support'
+      fullPath: '/support'
+      preLoaderRoute: typeof SupportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tracking': {
+      id: '/tracking'
+      path: '/tracking'
+      fullPath: '/tracking'
+      preLoaderRoute: typeof TrackingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/unit-managers': {
+      id: '/unit-managers'
+      path: '/unit-managers'
+      fullPath: '/unit-managers'
+      preLoaderRoute: typeof UnitManagersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AdminRoute: AdminRoute,
+  AdvertiseRoute: AdvertiseRoute,
+  CareersRoute: CareersRoute,
+  ContactRoute: ContactRoute,
+  DepotsRoute: DepotsRoute,
+  DriverRoute: DriverRoute,
+  HireRoute: HireRoute,
+  JourneyPlannerRoute: JourneyPlannerRoute,
+  OffersRoute: OffersRoute,
+  PrivacyRoute: PrivacyRoute,
+  RoutesRoute: RoutesRoute,
+  SmartCardRoute: SmartCardRoute,
+  SupportRoute: SupportRoute,
+  TermsRoute: TermsRoute,
+  TrackingRoute: TrackingRoute,
+  UnitManagersRoute: UnitManagersRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
